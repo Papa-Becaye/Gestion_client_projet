@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE client [
+    <!ELEMENT client (buyer+)>
+    <!ELEMENT buyer (nom,prenom+,telephone+,date_lieunaissance,adresse)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT prenom (#PCDATA)>
+    <!ELEMENT telephone (#PCDATA)>
+    <!ELEMENT date_lieunaissance (jour,mois,annee,lieu)>
+    <!ELEMENT jour (#PCDATA)>
+    <!ELEMENT mois (#PCDATA)>
+    <!ELEMENT annee (#PCDATA)>
+    <!ELEMENT lieu (#PCDATA)>
+    <!ELEMENT adresse (#PCDATA)>
+    <!ATTLIST buyer numero ID #REQUIRED>
+    ]>
+    <client>
+        <buyer number="_158">
+            <nom>Babou</nom>
+            <prenom>Tavy</prenom>
+            <telephone>7582235658</telephone>
+            <date_lieunaissance>
+                <jour>05</jour>
+                <mois>12</mois>
+                <annee>2014</annee>
+                <lieu>Bambaly</lieu>
+            </date_lieunaissance>
+            <adresse>liberté 6</adresse>
+        </buyer>
+    </client>
